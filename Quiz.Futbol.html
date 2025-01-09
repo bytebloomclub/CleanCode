@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚽ ¡Demuestra tu Pasión por el Fútbol! - Quiz Interactivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(90deg, #007bff, #00c853);
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            background: #1e88e5;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #0d47a1;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .question h3 {
+            margin: 10px 0;
+        }
+        .answers {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .answers label {
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        button {
+            background: #00c853;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #43a047;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>⚽ ¡Demuestra tu Pasión por el Fútbol! ⚽</h1>
+        <p>¡Responde estas 20 preguntas y prueba cuánto sabes del deporte rey!</p>
+    </header>
+    <div class="container">
+        <form id="quizForm">
+            <div class="question">
+                <h3>1. ¿Quién ganó la Copa del Mundo 2018?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q1" value="Francia"> Francia</label>
+                    <label><input type="radio" name="q1" value="Brasil"> Brasil</label>
+                    <label><input type="radio" name="q1" value="Alemania"> Alemania</label>
+                    <label><input type="radio" name="q1" value="Argentina"> Argentina</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>2. ¿Quién es el máximo goleador en la historia de la Champions League?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q2" value="Lionel Messi"> Lionel Messi</label>
+                    <label><input type="radio" name="q2" value="Cristiano Ronaldo"> Cristiano Ronaldo</label>
+                    <label><input type="radio" name="q2" value="Raúl González"> Raúl González</label>
+                    <label><input type="radio" name="q2" value="Karim Benzema"> Karim Benzema</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>3. ¿Qué país ha ganado más Copas del Mundo?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q3" value="Brasil"> Brasil</label>
+                    <label><input type="radio" name="q3" value="Alemania"> Alemania</label>
+                    <label><input type="radio" name="q3" value="Italia"> Italia</label>
+                    <label><input type="radio" name="q3" value="Argentina"> Argentina</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>4. ¿Cuál es el equipo con más títulos de la Premier League?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="Manchester United"> Manchester United</label>
+                    <label><input type="radio" name="q4" value="Liverpool"> Liverpool</label>
+                    <label><input type="radio" name="q4" value="Chelsea"> Chelsea</label>
+                    <label><input type="radio" name="q4" value="Arsenal"> Arsenal</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>5. ¿Quién marcó el famoso gol conocido como "La Mano de Dios"?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q5" value="Diego Maradona"> Diego Maradona</label>
+                    <label><input type="radio" name="q5" value="Pelé"> Pelé</label>
+                    <label><input type="radio" name="q5" value="Zinedine Zidane"> Zinedine Zidane</label>
+                    <label><input type="radio" name="q5" value="Lionel Messi"> Lionel Messi</label>
+                </div>
+            </div>
+            <!-- Más preguntas añadidas -->
+            <div class="question">
+                <h3>6. ¿Qué jugador tiene más Balones de Oro?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q6" value="Lionel Messi"> Lionel Messi</label>
+                    <label><input type="radio" name="q6" value="Cristiano Ronaldo"> Cristiano Ronaldo</label>
+                    <label><input type="radio" name="q6" value="Johan Cruyff"> Johan Cruyff</label>
+                    <label><input type="radio" name="q6" value="Michel Platini"> Michel Platini</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>7. ¿Qué equipo ganó la primera Copa del Mundo en 1930?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q7" value="Uruguay"> Uruguay</label>
+                    <label><input type="radio" name="q7" value="Argentina"> Argentina</label>
+                    <label><input type="radio" name="q7" value="Brasil"> Brasil</label>
+                    <label><input type="radio" name="q7" value="Italia"> Italia</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>8. ¿En qué año debutó Lionel Messi en el FC Barcelona?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q8" value="2004"> 2004</label>
+                    <label><input type="radio" name="q8" value="2006"> 2006</label>
+                    <label><input type="radio" name="q8" value="2003"> 2003</label>
+                    <label><input type="radio" name="q8" value="2005"> 2005</label>
+                </div>
+            </div>
+            <button type="button" onclick="calcularResultados()">Enviar Respuestas</button>
+        </form>
+        <p id="result" style="margin-top: 20px; font-size: 1.5rem;"></p>
+    </div>
+
+    <footer>
+        <p>Creado con ❤️ por un amante del fútbol</p>
+    </footer>
+
+    <script>
+        function calcularResultados() {
+            const respuestasCorrectas = {
+                q1: "Francia",
+                q2: "Cristiano Ronaldo",
+                q3: "Brasil",
+                q4: "Manchester United",
+                q5: "Diego Maradona",
+                q6: "Lionel Messi",
+                q7: "Uruguay",
+                q8: "2004",
+                // Añade más respuestas correctas aquí para las nuevas preguntas
+            };
+
+            const formulario = document.getElementById("quizForm");
+            let puntaje = 0;
+
+            for (const [pregunta, respuesta] of Object.entries(respuestasCorrectas)) {
+                const seleccionada = formulario.querySelector(`input[name="${pregunta}"]:checked`);
+                if (seleccionada && seleccionada.value === respuesta) {
+                    puntaje++;
+                }
+            }
+
+            document.getElementById("result").textContent = `Tu puntaje es: ${puntaje} / ${Object.keys(respuestasCorrectas).length}`;
+        }
+    </script>
+</body>
+</html>
